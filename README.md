@@ -63,7 +63,7 @@ BigQuery가 직접 GCS 상의 Iceberg 테이블을 관리하는 아키텍처를 
 
 ## 📧 Contact
 * **Author**: Changseop
-* **Email**: changseop@google.com
+* **Email**: officialchangseop@gmail.com
 
 ---
 *Disclaimer: 본 실습 가이드는 학습 목적으로 제작되었으며, 대용량 성능 테스트 시 클라우드 비용이 발생할 수 있으니 주의하시기 바랍니다.*
