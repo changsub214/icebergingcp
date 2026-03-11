@@ -11,7 +11,7 @@
 단순한 데이터 저장을 넘어, GCP 상의 Iceberg는 오픈 소스의 유연성과 구글 클라우드의 강력한 인프라를 결합한 최적의 아키텍처를 제공합니다.
 
 * **상호운용성 (Interoperability)**: Iceberg는 특정 벤더에 종속되지 않는 개방형 포맷입니다. [BigLake](https://cloud.google.com/bigquery/docs/biglake-intro)를 통해 데이터를 이동시키지 않고도 **BigQuery, Dataproc(Spark)** 등 다양한 GCP 서비스뿐만 아니라 **Trino, Hive** 등 다양한 OSS에서도 동일한 데이터를 동시에 쿼리하고 관리할 수 있습니다.
-* **가버넌스 (Governance)**: Cloud Storage(GCS)에 저장된 오픈 데이터 포맷(Iceberg)에 대해서도 **BigQuery**의 세밀한 권한 제어(Row/Column-level security)**를 그대로 적용할 수 있으며 Dataplex까지 확장이 가능합니다.
+* **가버넌스 (Governance)**: Cloud Storage(GCS)에 저장된 오픈 데이터 포맷(Iceberg)에 대해서도 BigQuery의 세밀한 권한 제어(Row/Column-level security)로 확장할 수 있으며 Dataplex를 결합해 데이터 환경의 전반적인 관리와 데이터 품질을 관리하여 거버넌스를 실현할 수 있습니다.
 * **유연한 스키마 및 파티션 진화**: 데이터 재작성 없이도 테이블 구조를 변경하거나 파티션 전략을 수정할 수 있어 데이터 엔지니어링의 운영 부담이 대폭 감소합니다.
 
 ## 🚀 Why Dataproc is Better for Iceberg?
