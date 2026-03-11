@@ -18,8 +18,8 @@
 
 Iceberg 데이터를 처리할 때 **Dataproc**은 단순한 Spark 실행 환경 이상의 가치를 제공합니다.
 
-* **Lightning Engine (성능 가속)**: [Lightning Engine](https://cloud.google.com/dataproc-serverless/docs/concepts/lightning-engine)은 Google이 최적화한 고성능 벡터화 쿼리 엔진입니다. 대규모 Iceberg 테이블 스캔 및 복잡한 JOIN 연산 시 오픈소스 Spark 대비 **최대 수 배 이상의 처리 속도**를 자랑합니다. 
-* **Serverless의 편리함**: 인프라 관리 없이 코드에만 집중할 수 있는 [Dataproc Serverless](https://cloud.google.com/dataproc-serverless) 환경은 Iceberg의 복잡한 설정(Catalog 연결, Jar 의존성 등)을 간소화합니다.
+* **Lightning Engine (성능 가속)**: [Lightning Engine](https://docs.cloud.google.com/dataproc-serverless/docs/guides/lightning-engine?hl=ko#overview)은 Google이 최적화한 고성능 벡터화 쿼리 엔진입니다. 대규모 Iceberg 테이블 스캔 및 복잡한 JOIN 연산 시 오픈소스 Spark 대비 **최대 수 배 이상의 처리 속도**를 자랑합니다. 
+* **Serverless의 편리함**: 인프라 관리 없이 코드에만 집중할 수 있는 [Dataproc Serverless](https://docs.cloud.google.com/dataproc-serverless/docs/overview?hl=ko#batch_workloads) 환경은 Iceberg의 복잡한 설정(Catalog 연결, Jar 의존성 등)을 간소화합니다.
 * **최적화된 커넥터**: GCS 및 BigQuery REST Catalog와의 네이티브 통합을 통해 데이터 전송 병목을 최소화하고 최적화된 I/O 성능을 제공합니다.
 
 ---
@@ -28,12 +28,10 @@ Iceberg 데이터를 처리할 때 **Dataproc**은 단순한 Spark 실행 환경
 
 ### 1. BigQuery Managed Iceberg Table (Time Travel)
 BigQuery가 직접 GCS 상의 Iceberg 테이블을 관리하는 아키텍처를 실습합니다.  
-[GCP 문서: Iceberg 테이블의 Time Travel 조회](https://cloud.google.com/bigquery/docs/iceberg-tables#time-travel)
 * 데이터 업데이트 후 과거 시점 스냅샷 조회
 
 ### 2. Iceberg Catalog 전략 비교
 메타데이터 가용성과 상호운용성을 극대화하는 카탈로그 구성 방법을 학습합니다.  
-[GCP 문서: Iceberg REST Catalog](https://cloud.google.com/bigquery/docs/manage-open-source-metadata)
 * **Iceberg REST Catalog**: 오픈소스 생태계 표준 카탈로그 인터페이스.
 * **BigQuery Catalog Federation**: 별도의 카탈로그 서버 운영 없이 BigQuery를 통해 메타데이터를 통합 관리하는 방식.
 
