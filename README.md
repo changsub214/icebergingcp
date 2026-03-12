@@ -51,13 +51,22 @@ BigQuery가 직접 GCS 상의 Iceberg 테이블을 관리하는 아키텍처를 
 
 ### 주의 사항
 * Notebook in BQ에 필요한 API 활성화 및 인터넷 통신이 가능한 네트워크 환경이 구축되어 있어야 합니다.
-* 실습은 서울 리전(`asia-northeast3`)을 기준으로 작성되었습니다. 필요 시 노트북 코드 상의 리전 변수를 수정하세요.
+* 실습은 서울 리전(`asia-northeast3`)을 기준으로 작성되었습니다. 필요 시 노트북 업로드 때와 노트북 내 코드 상의 리전 변수를 수정하세요.
+* 작업 내 일부는 직접 변수 수정이 필요한 과정(Catalog > BQ Catalog Federation)이 있으므로 순차적으로 셀을 실행하며 진행합니다.  
 
-### 실행 방법
+### 실행 방법1
 1.  **GCP Console** 접속 후 **BigQuery** 메뉴로 이동합니다.
 2.  **Notebooks**에서 `Upload Notebook`을 선택하여 본 저장소의 `.ipynb` 파일을 업로드합니다.
 3.  업로드된 노트북을 열고 **Runtime을 연결**합니다.
-4.  작업 내 일부는 직접 변수 수정이 필요한 과정(Catalog > BQ Catalog Federation)이 있으므로 순차적으로 셀을 실행하며 진행합니다.
+
+### 실행 방법2
+1.  **GCP Console** 접속 후 **BigQuery** 메뉴로 이동합니다.
+2.  **Notebooks**에서 `Upload Notebook`을 선택하여 URL 체크 후 아래 코드 복사 및 붙여넣은 후 업로드합니다.
+   ```plaintext
+  https://raw.githubusercontent.com/changsub214/icebergingcp/main/iceberg_gcp_korea.ipynb
+  ```
+4.  업로드된 노트북을 열고 **Runtime을 연결**합니다.
+
 
 ---
 
