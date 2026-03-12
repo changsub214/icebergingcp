@@ -36,10 +36,10 @@ BigQuery가 직접 GCS 상의 Iceberg 테이블을 관리하는 아키텍처를 
 * **Iceberg REST Catalog**: 오픈소스 생태계 표준 카탈로그 인터페이스.
 * **BigQuery Catalog Federation**: 별도의 카탈로그 서버 운영 없이 BigQuery를 통해 메타데이터를 통합 관리하는 방식.
 
-### 3. 데이터 및 메타데이터 최적화 (Compaction)
+### 3. 데이터 및 메타데이터 파일 최적화 (Compaction)
 유지보수를 위해 중요한 관리 기법을 실습합니다.
 * **File Compaction**: 작은 파일 병합을 통한 최적화(Binpack 전략).
-* **Metadata Compaction**: 메타데이터 파일 자동 삭제 정책을 통한 최적화.
+* **Metadata File Compaction**: 메타데이터 파일 자동 삭제 정책을 통한 최적화.
 
 ### 4. Dataproc Lightning Engine 성능 벤치마크
 구글 공개 데이터세트 중 **Wikipedia** 데이터를 활용해 엔진 성능을 직접 비교합니다.
